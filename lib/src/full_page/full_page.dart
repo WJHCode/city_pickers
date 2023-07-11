@@ -312,7 +312,7 @@ class _FullPageState extends State<FullPage> {
       case Status.Over:
         break;
     }
-    return Text(title);
+    return Text(title,const TextStyle(color: Color.fromRGBO(19, 51, 77, 1),fontSize: 17,fontWeight: FontWeight.w700));
   }
 
   @override
