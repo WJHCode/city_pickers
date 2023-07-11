@@ -312,7 +312,7 @@ class _FullPageState extends State<FullPage> {
       case Status.Over:
         break;
     }
-    return Text(title,style:const TextStyle(color: Color.fromRGBO(19, 51, 77, 1),fontSize: 17,fontWeight: FontWeight.w700));
+    return Text(title);
   }
 
   @override
@@ -321,13 +321,9 @@ class _FullPageState extends State<FullPage> {
     return WillPopScope(
       onWillPop: back,
       child: Scaffold(
-        backgroundColor: Colors.white,//theme.colorScheme.background,
+        backgroundColor: theme.colorScheme.background,
         appBar: AppBar(
           title: _buildHead(),
-          backgroundColor:Colors.white,
-          iconTheme: const IconThemeData(
-             color: Colors.black
-           ),
         ),
         body: SafeArea(
           bottom: true,
